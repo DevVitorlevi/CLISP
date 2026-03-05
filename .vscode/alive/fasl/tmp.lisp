@@ -1,9 +1,4 @@
-(defparameter *fatos*
-              '((:pessoa (:nome . "Socrates") (:is-a . "Mortal"))
-                (:pessoa (:nome . "Platao") (:is-a . "Humano"))
-                (:cidade (:nome . "Atenas") (:is-a . "Cidade"))))
+(defmacro meu-nome (nome)
+  `(print "Meu nome e" ,nome))
 
-
-(mapcar #'(lambda (item)
-            (cdr (third item)))
-  *fatos*)
+(macroexpand '(meu-nome "Levi"))
