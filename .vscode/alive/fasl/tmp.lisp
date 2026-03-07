@@ -1,8 +1,5 @@
-(defparameter *status-sistema* "INATIVO")
+(+ 10 20 30)
+(* 2 (+ 3 4))
 
-(defmacro atualizar-status (variavel novo-valor)
-  `(progn
-    (setf ,variavel ,novo-valor)
-    (print "Status Alterado!")))
-
-(macroexpand '(atualizar-status *status-sistema* "ATIVO"))
+(/ (+ 10 20 60) 3)
+(/ (+ 10 21) 2) io
