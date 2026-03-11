@@ -1,3 +1,8 @@
-(defparameter *filosofos* '("Socrates" "Platao" "Aristoteles" "Socrates"))
+(defstruct tripla
+  sujeito
+  predicato
+  objeto)
 
-(remove-if-not #'(lambda (nome) (equal nome "Socrates")) *filosofos*)
+(defparameter *minha-tripla* (make-tripla :sujeito "Machado_de_Assis" :predicato "write" :objeto "Dom_Casmurro"))
+
+(tripla-objeto *minha-tripla*)
