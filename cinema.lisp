@@ -18,7 +18,7 @@
                    "Clássico Moderno - Altamente recomendado")
                  ((= *note-movie* 10)
                    "Obra-prima Universal")
-                 (t "Filme Comum - Adiciona a Biblioteca"))))
+                 (t "Filme Comum"))))
 
     (if (> *note-movie* 0)
         (print "Sucessful Process")
